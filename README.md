@@ -17,9 +17,9 @@ La autenticación está implementada con **Magic Link**.
 ### Clonar el repositorio
 
 ```
-git https://github.com/tt-eduardo/project-nuxt.git
+git clone https://github.com/tt-eduardo/project-nuxt.git
 ```
-```
+``` 
 cd project-nuxt
 ```
 
