@@ -1,7 +1,7 @@
 export default defineNuxtPlugin(() => {
   const API = async (method: string, url: string, data?: any) => {
     const config = useRuntimeConfig()
-    const baseURL = config.public.apiBase || 'http://localhost:3001'
+    const baseURL = config.public.apiBase
 
     // Recuperar el token desde localStorage
     const token = localStorage.getItem('auth_token')

@@ -37,7 +37,10 @@ export default defineNuxtConfig({
   },
   css: ["primeicons/primeicons.css"],
   plugins: ["~/plugins/api.ts", "~/plugins/auth.ts"],
-  runtimeConfig: {
-    apiBaseUrl: process.env.NUXT_API_URL, // URL base para las peticiones API
-  },
+   runtimeConfig: {
+     public: {
+       apiBase: process.env.NUXT_PUBLIC_API_BASE,  //URL base para las peticiones API
+     }
+   },
 });
+
