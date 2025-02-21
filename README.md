@@ -38,3 +38,11 @@ Crea un archivo .env en la raíz del proyecto basado en .env.example y completa 
 ```
 npm run dev
 ```
+
+### Scripts disponibles
+
+| Comando           | Descripción                                      |
+|-------------------|--------------------------------------------------|
+| npm run dev	    | Inicia el servidor de desarrollo                 |
+| npm run build	    | Compila la aplicación para producción            |
+| npm run preview	| Ejecuta una vista previa del build de producción |
