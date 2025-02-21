@@ -88,7 +88,7 @@ const updateProject = async () => {
             formDataUpload.append('logo', selectedFile.value);
         }
 
-        const response = await $API('PUT', `/projects?id=${props.formData.id}`, formDataUpload);
+        const response = await $API('PUT', `/projects?id=${props.formData._id}`, formDataUpload);
         
         toast.add({
         severity: 'success',

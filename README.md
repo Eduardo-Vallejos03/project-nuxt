@@ -1,75 +1,40 @@
-# Nuxt Minimal Starter
+# Project Nuxt Vue 3
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este proyecto está construido con **Vue 3** y **Nuxt**, utilizando **PrimeVue** con **Tailwind CSS** para los estilos.  
+La autenticación está implementada con **Magic Link**.
 
-## Setup
+### Tecnologías utilizadas
 
-Make sure to install dependencies:
+- **Vue 3** con **Nuxt**
+- **Autenticación:** Auth.js con **Magic Link**
+- **Estilos:** PrimeVue + Tailwind CSS
+- **Gestor de paquetes:** npm
 
-```bash
-# npm
+---
+
+### Instalación
+
+### Clonar el repositorio
+
+```
+git https://github.com/tt-eduardo/project-nuxt.git
+```
+```
+cd project-nuxt
+```
+
+### Instalar dependencias
+
+```
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### Configurar variables de entorno
 
-Start the development server on `http://localhost:3000`:
+Crea un archivo .env en la raíz del proyecto basado en .env.example y completa los valores necesarios.
 
-```bash
-# npm
+### Ejecutar el servidor de desarrollo
+
+```
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

@@ -14,7 +14,7 @@
     :value="users" 
     v-model:filters="filters"
     class="shadow-lg"
-    :globalFilterFields="['id', 'name', 'email']"
+    :globalFilterFields="['_id', 'name', 'email']"
     >
       <template #header>
         <div class="flex flex-wrap gap-2 items-center justify-between mb-2">
@@ -27,7 +27,7 @@
           </IconField>
         </div>
       </template>
-      <Column field="id" header="ID"/>
+      <Column field="_id" header="ID"/>
       <Column field="name" header="Nombre"/>
       <Column field="email" header="Email"/>
       <Column header="Acciones">
@@ -37,12 +37,12 @@
             severity="info" 
             rounded
             class="mr-2"
-            @click="openDialogEdit(slotProps.data.id)" />
+            @click="openDialogEdit(slotProps.data._id)" />
           <Button 
             icon="pi pi-trash" 
             severity="danger" 
             rounded
-            @click="confirmDelete(slotProps.data.id)" />
+            @click="confirmDelete(slotProps.data._id)" />
         </template>
       </Column>
     </DataTable>
@@ -62,7 +62,7 @@ import { FilterMatchMode } from '@primevue/core/api';
 import { useConfirm } from "primevue/useconfirm";
 
 interface Users {
-  id: string;
+  _id: string;
   name: string;
   email: string;
 }

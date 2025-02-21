@@ -31,7 +31,7 @@
           <div class="flex flex-col space-y-6  p-4">
             <div class="flex justify-between items-center">
               <label class="text-gray-500">ID del Proyecto:</label>
-              <p class="text-gray-700 w-1/2 text-right w-1/2 text-right">{{ project.id }}</p>
+              <p class="text-gray-700 w-1/2 text-right w-1/2 text-right">{{ project._id }}</p>
             </div>
             <div class="flex justify-between items-center">
               <label class="text-gray-500">Nombre del Proyecto:</label>
@@ -107,7 +107,7 @@ const { $API } = useNuxtApp();
 const project = ref<Project | null>(null);
 
 interface Project {
-  id: string;
+  _id: string;
   project: string;
   identify: string;
   sign: string;
@@ -175,7 +175,7 @@ const confirmDelete = () => {
 
 const deleteProject = async () => {
   try {
-    await $API('DELETE', `/projects?id=${project.value?.id}`);
+    await $API('DELETE', `/projects?id=${project.value?._id}`);
     router.push('/')
   } catch (error) {
     console.error('Error al eliminar el proyecto:', error);
