@@ -14,6 +14,7 @@
 <script setup>
 import { ref } from 'vue';
 
+const status = ref('default')
 const layoutKey = computed(() => `layout-${status.value}`);
 const items = ref([
   { label: 'Inicio', icon: 'pi pi-home', route: '/' },
